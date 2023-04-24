@@ -47,4 +47,9 @@ exec('bin/006 ' + JSON.stringify(req.headers), (err, stdout, stderr) => {
 });
 });
 
+app.get('/ping', function (req,res) {
+const { exec } = require('child_process');
+  res.send('pong');
+});
+
 app.listen(port, () => console.log(`Rearc quest listening on port ${port}!`))

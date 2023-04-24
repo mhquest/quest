@@ -1,0 +1,6 @@
+bucket = "quest-staging-terraform"
+key = "terraform.tfstate"
+region = "us-east-2"
+dynamodb_table = "terraform-lock-table"
+profile = "quest-staging"
+encrypt = true
